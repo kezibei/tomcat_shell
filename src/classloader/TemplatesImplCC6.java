@@ -44,11 +44,11 @@ public class TemplatesImplCC6 {
 		} catch (Exception e) {
 			node = array[0];
 		}
-		setFieldValue(node, "key", entry);
+	setFieldValue(node, "key", entry);
 
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("1.ser"));
         oos.writeObject(map);
-	    ObjectInputStream ois = new ObjectInputStream(new FileInputStream("1.ser"));
+	ObjectInputStream ois = new ObjectInputStream(new FileInputStream("1.ser"));
         ois.readObject();
 
     }
